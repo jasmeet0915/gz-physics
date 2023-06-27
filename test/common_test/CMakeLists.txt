@@ -1,4 +1,5 @@
 set(TEST_TYPE "COMMON_TEST")
+include_directories(${BULLET_INCLUDE_DIRS})
 
 set(tests
   added_mass
@@ -8,6 +9,7 @@ set(tests
   construct_empty_world
   free_joint_features
   joint_features
+  joint_transmitted_wrench_features
   kinematic_features
   link_features
   shape_features
